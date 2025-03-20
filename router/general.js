@@ -87,7 +87,7 @@ public_users.get('/review/:isbn',function (req, res) {
   for(var i = 1 ; i < 11 ; i++){
   
   if(isbn == i){
-    res.send(books[isbn])
+    res.send(books[isbn].reviews)
     break;
   }
   else if(i == 10)
